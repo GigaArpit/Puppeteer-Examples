@@ -8,6 +8,6 @@ const page = await browser.newPage();
 
 await page.goto('https://gs.statcounter.com/detect');
 
-await page.screenshot({path: './screenshot.png'});
+await page.screenshot({path: './screenshot.png', fullPage: true});
 
 await browser.close();
